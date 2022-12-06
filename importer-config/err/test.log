@@ -1,5 +1,0 @@
-2022/11/30 14:16:33 [INFO] clientmgr.go:31: Create 10 Nebula Graph clients
-2022/11/30 14:16:33 [INFO] reader.go:68: Start to read file(0): /root/graphdb/youtube/youtube-edge.csv, schema: < :SRC_VID(int),:DST_VID(int) >
-2022/11/30 14:16:37 [INFO] reader.go:184: Total lines of file(/root/graphdb/youtube/youtube-edge.csv) is: 2987624, error lines: 0
-2022/11/30 14:16:38 [INFO] statsmgr.go:89: Tick: Time(20.00s), Finished(2621440), Failed(0), Read Failed(0), Latency AVG(996025us), Batches Req AVG(1001207us), Rows AVG(131069.94/s)
-2022/11/30 14:16:39 [INFO] statsmgr.go:89: Done(/root/graphdb/youtube/youtube-edge.csv): Time(20.67s), Finished(2987624), Failed(0), Read Failed(0), Latency AVG(966435us), Batches Req AVG(971087us), Rows AVG(144526.65/s)

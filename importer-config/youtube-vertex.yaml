@@ -43,16 +43,16 @@ clientSettings:
     commands: |
 
 # 错误等日志信息输出的文件路径。    
-logPath: ./err/test.log
+logPath: /root/graphdb/youtube/err/test.log
 
 # CSV 文件相关设置。
 files:
 
     # 数据文件的存放路径，如果使用相对路径，则会将路径和当前配置文件的目录拼接。本示例第一个数据文件为点的数据。
-  - path: ../youtube-vertex.csv
+  - path: /root/graphdb/youtube/youtube-vertex.csv
 
     # 插入失败的数据文件存放路径，以便后面补写数据。
-    failDataPath: ./err/youtube-vertex.csv
+    failDataPath: /root/graphdb/youtube/err/youtube-vertex.csv
 
     # 单批次插入数据的语句数量。
     batchSize: 65536
