@@ -1,8 +1,9 @@
 import csv
 
-raw_dataset_path = "/root/graphdb/youtube/com-youtube.ungraph.txt"
-vertex_path = "/root/graphdb/youtube/youtube-vertex.csv"
-edge_path = "/root/graphdb/youtube/youtube-edge.csv"
+# replace
+raw_dataset_path = "/home/mashaonan/datasets/com-youtube.ungraph.txt"
+vertex_path = "/home/mashaonan/datasets/youtube/youtube-vertex.csv"
+edge_path = "/home/mashaonan/datasets/youtube/youtube-edge.csv"
 
 f = open(raw_dataset_path)
 v_csv = open(vertex_path, 'w')

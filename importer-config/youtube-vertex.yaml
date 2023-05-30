@@ -18,17 +18,17 @@ clientSettings:
   channelBufferSize: 128
 
   # 指定数据要导入的 NebulaGraph 图空间。
-  space: test
+  space: test    # replace
 
   # 连接信息。
   connection:
     user: root
     password: nebula
-    address: 127.0.0.1:9669
+    address: 127.0.0.1:9669     # replace
 
   postStart:
     # 配置连接 NebulaGraph 服务器之后，在插入数据之前执行的一些操作。
-    commands: |
+    commands: |     # replace
       DROP SPACE IF EXISTS test;
       CREATE SPACE IF NOT EXISTS test(vid_type=INT64);
       USE test;
@@ -43,16 +43,16 @@ clientSettings:
     commands: |
 
 # 错误等日志信息输出的文件路径。    
-logPath: /root/graphdb/youtube/err/test.log
+logPath: /root/graphdb/youtube/err/test.log    # replace
 
 # CSV 文件相关设置。
 files:
 
     # 数据文件的存放路径，如果使用相对路径，则会将路径和当前配置文件的目录拼接。本示例第一个数据文件为点的数据。
-  - path: /root/graphdb/youtube/youtube-vertex.csv
+  - path: /root/graphdb/youtube/youtube-vertex.csv    # replace
 
     # 插入失败的数据文件存放路径，以便后面补写数据。
-    failDataPath: /root/graphdb/youtube/err/youtube-vertex.csv
+    failDataPath: /root/graphdb/youtube/err/youtube-vertex.csv     # replace
 
     # 单批次插入数据的语句数量。
     batchSize: 65536
